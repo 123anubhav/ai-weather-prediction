@@ -1,0 +1,88 @@
+<!--
+Created by  ===> Anubhav
+
+Chin Tapak Damdum...
+Abra ka dabra..
+Shazam!
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-card">
+            <div class="weather-header">
+                <i class="fas fa-cloud-sun-rain weather-icon"></i>
+                <h1>AI Weather Forecast</h1>
+                <p class="subtitle">The most unreliable weather forecast ever! 🎪</p>
+            </div>
+            
+            <div class="search-box">
+                <!-- <i class="fas fa-map-marker-alt location-icon"></i> -->
+                <input type="text" placeholder="Enter your city name" id="location">
+                <button id="check">
+                    <i class="fas fa-search"></i>
+                    <span>Get Weather</span>
+                </button>
+            </div>
+
+        <div id="load" style="display:none;">
+                <div class="loading-container">
+                    <div class="weather-loading">
+                        <div class="cloud"></div>
+                        <div class="sun"></div>
+                        <div class="rain"></div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                        <span class="progress-text">0%</span>
+                    </div>
+                    <p id="text">Analyzing weather patterns...</p>
+                </div>
+            </div>
+
+            <div class="weather-info">
+                <div class="weather-feature">
+                    <i class="fas fa-robot"></i>
+                    <p>AI-Powered Predictions</p>
+                </div>
+                <div class="weather-feature">
+                    <i class="fas fa-clock"></i>
+                    <p>Real-time Updates</p>
+                </div>
+                <div class="weather-feature">
+                    <i class="fas fa-chart-line"></i>
+                    <p>Advanced Analytics</p>
+                </div>
+            </div>
+
+            <div class="credit">
+                Created with <i class="fas fa-heart heart-beat"></i> by Anubhav
+            </div>
+        </div>
+    </div>
+
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <i class="fas fa-laugh-wink"></i>
+            <p id="alert-message"></p>
+            <button onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+
+  
+</body>
+
+</html>
