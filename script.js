@@ -50,7 +50,7 @@ function showCustomAlert(message, isSecondMessage = false) {
         okButton.onclick = function() {
             closeAlert();
             setTimeout(() => {
-                showCustomAlert("Just kidding! This is an April Fools' weather app to make you Smile 😂\n So Smile and be happy 😄 ", true);
+                showCustomAlert("Just kidding! This is Anubhav's April Fools' Attempt to make you Smile 😂\n So Smile and be happy 😄 ", true);
             }, 100);
         };
     } else {
